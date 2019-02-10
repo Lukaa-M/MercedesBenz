@@ -11,8 +11,9 @@ li{
 }
 
 body{
+    width: 100%;
     font-family: sans-serif;
-    overflow: hidden;
+    height: 100%;
 }
 
 header{
@@ -28,10 +29,10 @@ header{
     position: relative;
     height: 630px;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 88%);
-            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 88%);
+             clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 88%);
 }
 .headerImg .toggle{
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     min-width:40px;
@@ -62,7 +63,7 @@ header{
     line-height: 40px;
 }
 .logo{
-    position: fixed;
+    position: absolute;
     top: -10px;
     left: 20px;
     min-width: 100px;
@@ -73,10 +74,10 @@ header{
     background-repeat: no-repeat;
 }
 #scrollDownButton{
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 50px;
+    width: 50px;
     height: 50px;
     transform: translate(-50%,510%);
     border-radius: 50%;
@@ -150,11 +151,95 @@ ul li a:hover::before{
     top: 50%;
 }
 
+#main{
+    width: 100%;
+    height: 3000px;
+}
+
+.carImg1{
+    background-image: url("../img/car_img1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin: 50px 0 0 0;
+    width: 300px;
+    padding: 0 20px 0 0;
+
+}
+.carImg2{
+    background-image: url("../img/car_img2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 300px;
+    margin: 50px 0 0 0;
+    padding: 0 0 0 20px;
+    
+}
+.carImg3{
+    background-image: url("../img/car_img3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    
+}
+.carImg4{
+    background-image: url("../img/car_img4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    
+}
+.carImg5{
+    background-image: url("../img/car_img5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    
+}
+.carImg6{
+    background-image: url("../img/car_img6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
 
 
+.viewCars{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f81a1ad2;
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+}
+.viewCars p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 160px;
+    height: 25px;
+    color:#fff;
+    font-size: 18px;
+}
+
+.margin{
+    margin: 30px 10px 50px 10px;
+}
 
 
-
+.radius{
+    border-radius: 20px;
+}
 
 
 
