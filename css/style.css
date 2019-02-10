@@ -153,18 +153,26 @@ ul li a:hover::before{
 
 #main{
     width: 100%;
-    height: 3000px;
+    height: 4000px;
 }
 
+.wrap1{
+    height: 1300px;
+    width: 100%;
+    background-color: #262626;
+    -webkit-clip-path: polygon(0 4%, 100% 0, 100% 82%, 0 89%);
+clip-path: polygon(0 4%, 100% 0, 100% 82%, 0 89%);
+    padding: 25px;
+}
 .carImg1{
     background-image: url("../img/car_img1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
-    margin: 50px 0 0 0;
-    width: 300px;
-    padding: 0 20px 0 0;
+    height: 300px;
+    max-width: 420px;
+    margin-left: 15px;
+    
 
 }
 .carImg2{
@@ -172,10 +180,10 @@ ul li a:hover::before{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
-    width: 300px;
-    margin: 50px 0 0 0;
-    padding: 0 0 0 20px;
+    height: 300px;
+    max-width: 420px;
+    margin-left: 15px;
+    
     
 }
 .carImg3{
@@ -183,7 +191,9 @@ ul li a:hover::before{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 300px;
+    max-width: 420px;
+    margin-left: 15px;
     
 }
 .carImg4{
@@ -191,27 +201,31 @@ ul li a:hover::before{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
-    
+    height: 300px;
+    max-width: 420px;
+    margin-left: 15px;
 }
 .carImg5{
     background-image: url("../img/car_img5.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
-    
+    height: 300px;
+    max-width: 420px;
+    margin-left: 15px;
 }
 .carImg6{
     background-image: url("../img/car_img6.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 300px;
+    max-width: 420px;
+    margin-left: 15px;
 }
 
 
-.viewCars{
+.view {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -221,7 +235,7 @@ ul li a:hover::before{
     height: 60px;
     border-radius: 30px;
 }
-.viewCars p{
+.view p{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -232,12 +246,17 @@ ul li a:hover::before{
     font-size: 18px;
 }
 
+.carRow{
+    width: 900px;
+    height: 300px;
+}
 .margin{
     margin: 30px 10px 50px 10px;
 }
 
 
 .radius{
+    
     border-radius: 20px;
 }
 
