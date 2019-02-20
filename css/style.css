@@ -19,6 +19,7 @@ body{
 header{
     width: 100%;
     min-height: 650px;
+    margin-bottom: 50px;
 }
 
 .headerImg{
@@ -88,6 +89,7 @@ header{
     z-index: 10;
     font-size: 20px;
     overflow: hidden;
+    animation: sPulse 2s linear infinite;
 }
 
 
@@ -153,7 +155,7 @@ ul li a:hover::before{
 
 #main{
     width: 100%;
-    height: 4000px;
+    height: 4300px;
 }
 
 .wrap1{
@@ -163,6 +165,104 @@ ul li a:hover::before{
     -webkit-clip-path: polygon(0 4%, 100% 0, 100% 82%, 0 89%);
 clip-path: polygon(0 4%, 100% 0, 100% 82%, 0 89%);
     padding: 25px;
+    animation: wrapAnimation 1.5s ease-in-out;
+}
+.wrap2{
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    -webkit-clip-path: polygon(0 4%, 100% 11%, 100% 67%, 0 79%);
+clip-path: polygon(0 4%, 100% 11%, 100% 67%, 0 79%);
+    animation: wrapAnimation 1s ease-out;
+}
+.videoWrap{
+   position:absolute;
+   top: -85px;
+   left: 0;
+   width: 100%;
+   height: inherit;
+   overflow: hidden;
+}
+.videoWrap video{
+    min-width: 100%;
+    height: 100%;
+    /* position: absolute;
+    left:-300px;
+    top:0; */
+}
+.wrap2 .opacity{
+    opacity:0.85;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #262626;
+    z-index: 1;
+}
+.vText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%,-1000%);
+    color: #fff;
+    z-index: 2;
+
+}
+.wrap3{
+    height: 600px;
+    width: 100%;
+    background-color: #262626;
+    -webkit-clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 89%);
+clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 89%);
+animation: wrapAnimation 1s ease-out;
+}
+.wrap4{
+    height: 800px;
+    width: 100%;
+    position: relative;
+    
+}
+.wrap4 .shape{
+    height: 800px;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #262626;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    padding: 20px;
+}
+
+.aboutAuthorPic{
+    display: block;
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin-top: 170px;
+}
+.aboutAuthorText{
+    display: block;
+    width: 400px;
+    height: 350px;
+    float: right;
+    margin-top: 100px;
+}
+.aboutAuthorText h1{
+    color: #fff;
+    font-size: 23px;
+}
+.aboutAuthorText p{
+    color: #fff;
+    font-size: 21px;
+}
+.aboutAuthorText .midText{
+    margin-top: 50px;
+}
+.aboutAuthorText .endText{
+    margin-top: 50px;
 }
 .carImg1{
     background-image: url("../img/car_img1.jpg");
@@ -172,6 +272,7 @@ clip-path: polygon(0 4%, 100% 0, 100% 82%, 0 89%);
     height: 300px;
     max-width: 420px;
     margin-left: 15px;
+    animation: tickle 1s linear infinite;
     
 
 }
@@ -183,6 +284,7 @@ clip-path: polygon(0 4%, 100% 0, 100% 82%, 0 89%);
     height: 300px;
     max-width: 420px;
     margin-left: 15px;
+    animation: tickle 1s linear infinite;
     
     
 }
@@ -194,7 +296,7 @@ clip-path: polygon(0 4%, 100% 0, 100% 82%, 0 89%);
     height: 300px;
     max-width: 420px;
     margin-left: 15px;
-    
+    animation: tickle 1s linear infinite;
 }
 .carImg4{
     background-image: url("../img/car_img4.jpg");
@@ -204,6 +306,7 @@ clip-path: polygon(0 4%, 100% 0, 100% 82%, 0 89%);
     height: 300px;
     max-width: 420px;
     margin-left: 15px;
+    animation: tickle 1s linear infinite;
 }
 .carImg5{
     background-image: url("../img/car_img5.jpg");
@@ -213,6 +316,7 @@ clip-path: polygon(0 4%, 100% 0, 100% 82%, 0 89%);
     height: 300px;
     max-width: 420px;
     margin-left: 15px;
+    animation: tickle 1s linear infinite;
 }
 .carImg6{
     background-image: url("../img/car_img6.jpg");
@@ -222,9 +326,112 @@ clip-path: polygon(0 4%, 100% 0, 100% 82%, 0 89%);
     height: 300px;
     max-width: 420px;
     margin-left: 15px;
+    animation: tickle 1s linear infinite;
 }
 
+.supportImg{
+    background-image: url("../img/support_img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px; 
+    position: relative;   
+}
+.supleft{
+    width: 250px;
+    height: 300px;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(80%,-60%);
+    border: 2px solid #fff;
+}
+.supleft ul{
+    width: 100%;
+    margin-top: 15px;
+    padding: 20px;
+}
+.supleft ul a{
+    text-decoration: none;
+    color: #fff;
+}
+.supleft ul a li{
+    margin-bottom: 15px;
+}
+.supright{
+    width: 250px;
+    height: 300px;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-180%,-60%);
+    border: 2px solid #fff;
+    
+}
+.supright ul{
+    width: 100%;
+    margin-top: 15px;
+    padding: 20px;
+}
+.supright ul a{
+    text-decoration: none;
+    color: #fff;
+}
+.supright ul a li{
+    margin-bottom: 15px;
+}
 
+.Sview{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f81a1ad2;
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    animation: pulse 2s linear infinite;
+}
+.Sview p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 160px;
+    height: 25px;
+    color:#fff;
+    font-size: 18px;
+}
+.Aview{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f81a1ad2;
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    animation: pulse 2s linear infinite;
+    
+
+}
+.Aview p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 160px;
+    height: 25px;
+    color:#fff;
+    font-size: 18px;
+
+}
 .view {
     position: relative;
     left: 50%;
@@ -234,8 +441,34 @@ clip-path: polygon(0 4%, 100% 0, 100% 82%, 0 89%);
     width: 250px;
     height: 60px;
     border-radius: 30px;
+    margin-bottom: 10px;
+    animation: pulse 2s linear infinite;
 }
 .view p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 160px;
+    height: 25px;
+    color:#fff;
+    font-size: 18px;
+    
+}
+
+.videoView{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f81a1ad2;
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    animation: slide 1s linear;
+}
+.videoView p{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -261,21 +494,143 @@ clip-path: polygon(0 4%, 100% 0, 100% 82%, 0 89%);
 }
 
 
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #262626;
+}
+
+
+@keyframes wrapAnimation{
+    0%{
+        width: 0%;
+        opacity: 0;
+    }
+    25%{
+        width: 300px;
+        opacity: 0.2;
+    }
+    50%{
+        width: 500px;
+        opacity: 0.5;
+    }
+    75%{
+        width: 800px;
+        opacity: 0.7;
+    }
+    100%{
+        width: 100%;
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes wrapAnimationHeight{
+    0%{
+        height: 0%;
+        opacity: 0;
+    }
+    25%{
+        height: 300px;
+        opacity: 0.2;
+    }
+    50%{
+        height: 500px;
+        opacity: 0.5;
+    }
+    75%{
+        height: 800px;
+        opacity: 0.7;
+    }
+    100%{
+        height: 100%;
+        opacity: 1;
+    }
+
+
+}
+
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(248, 26, 26,.7),  0 0 0 0 rgba(248, 26, 26,.7);
+    }
+    40%{
+        box-shadow: 0 0 0 50px rgba(248, 26, 26,0),  0 0 0 0 rgba(248, 26, 26,.7);
+    }
+    80%{
+        box-shadow: 0 0 0 50px rgba(248, 26, 26,0),  0 0 0 30px rgba(248, 26, 26,0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(248, 26, 26,0), 0 0 0 30px rgba(248, 26, 26,0);
+    } 
 
 
 
 
 
+}
+
+@keyframes sPulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(248, 26, 26,.7); 
+    }
+    40%{
+        box-shadow: 0 0 0 50px rgba(248, 26, 26,0);
+    }
+    80%{
+        box-shadow: 0 0 0 50px rgba(248, 26, 26,0);  
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(248, 26, 26,0); 
+    } 
 
 
 
 
 
+}
+
+
+@keyframes slide{
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    80% {
+            transform: translateX(50px);
+    }
+    90% {
+            transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%);
+    }
+
+}
+
+
+@keyframes tickle{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(2deg);
+    }
+    75%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
 
 
 
 
 
+}
 
 
 
