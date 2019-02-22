@@ -1,0 +1,27 @@
+[
+    {
+        "class":{
+            "firstClass": "carImg1",
+            "secondClass": "carImg2",
+            "border":"radius"
+        }
+    },
+    {
+        "class":{
+            "firstClass": "carImg3",
+            "secondClass": "carImg4",
+            "border":"radius"
+        }
+    },
+    {
+        "class":{
+            "firstClass": "carImg5",
+            "secondClass": "carImg6",
+            "border":"radius"
+        }
+    }
+
+
+
+
+]
