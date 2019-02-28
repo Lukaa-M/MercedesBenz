@@ -56,7 +56,7 @@ $(document).ready(function(){
                 
             });
             document.querySelector(".supleft ul").innerHTML = write;
-            
+
             write2 = "";
             data.forEach(function(pick){
                 write2 +=`
@@ -100,6 +100,17 @@ $(document).ready(function(){
     opacityAttr.value = "opacity";
     opacity.setAttributeNode(opacityAttr);
     document.querySelector(".wrap2").appendChild(opacity);
+
+
+
+    var h2 = document.createElement("H2");
+    var h2Attribute = document.createAttribute("class");
+    h2Attribute.value = "vText";
+    h2.setAttributeNode(h2Attribute);
+    var text = document.createTextNode("See our best videos");
+    h2.appendChild(text);
+    document.querySelector(".wrap2").appendChild(h2);
+    
 
  }
 
