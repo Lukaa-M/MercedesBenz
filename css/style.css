@@ -91,7 +91,78 @@ header{
     overflow: hidden;
     animation: sPulse 2s linear infinite;
 }
-
+#scrollDown2{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-360%);
+    width: 60px;
+    height: 60px;
+}
+#scrollDown2 .scrollDownButton2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: #f81a1ad2;
+    text-align: center;
+    line-height: 55px;
+    color: #262626;
+    z-index: 10;
+    font-size: 20px;
+    overflow: hidden;
+    animation: sPulse 2s linear infinite;
+}
+#scrollDown3{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-670%);
+    width: 60px;
+    height: 60px;
+}
+#scrollDown3 .scrollDownButton3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: #f81a1ad2;
+    text-align: center;
+    line-height: 55px;
+    color: #262626;
+    z-index: 10;
+    font-size: 20px;
+    overflow: hidden;
+    animation: sPulse 2s linear infinite;
+}
+#scrollDown4{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-440%);
+    width: 60px;
+    height: 60px;
+}
+#scrollDown4 .scrollDownButton4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: #f81a1ad2;
+    text-align: center;
+    line-height: 55px;
+    color: #262626;
+    z-index: 10;
+    font-size: 20px;
+    overflow: hidden;
+    animation: sPulse 2s linear infinite;
+}
 
 
 .sidebar{
@@ -155,7 +226,7 @@ ul li a:hover::before{
 
 #main{
     width: 100%;
-    height: 4300px;
+    height: 4350px;
 }
 
 .wrap1{
@@ -169,6 +240,7 @@ clip-path: polygon(0 4%, 100% 0, 100% 82%, 0 89%);
 }
 .wrap2{
     position: relative;
+    bottom: 100px;
     height: 1000px;
     width: 100%;
     -webkit-clip-path: polygon(0 4%, 100% 11%, 100% 67%, 0 79%);
@@ -210,6 +282,8 @@ clip-path: polygon(0 4%, 100% 11%, 100% 67%, 0 79%);
 
 }
 .wrap3{
+    position: relative;
+    bottom: 200px;
     height: 600px;
     width: 100%;
     background-color: #262626;
@@ -221,6 +295,7 @@ animation: wrapAnimation 1s ease-out;
     height: 800px;
     width: 100%;
     position: relative;
+    bottom: 260px;
     
 }
 .wrap4 .shape{
@@ -297,6 +372,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     max-width: 420px;
     margin-left: 15px;
     animation: tickle 1s linear infinite;
+    position: relative;
     
 
 }
@@ -309,7 +385,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     max-width: 420px;
     margin-left: 15px;
     animation: tickle 1s linear infinite;
-    
+    position: relative;
     
 }
 .carImg3{
@@ -321,6 +397,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     max-width: 420px;
     margin-left: 15px;
     animation: tickle 1s linear infinite;
+    position: relative;
 }
 .carImg4{
     background-image: url("../img/car_img4.jpg");
@@ -331,6 +408,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     max-width: 420px;
     margin-left: 15px;
     animation: tickle 1s linear infinite;
+    position: relative;
 }
 .carImg5{
     background-image: url("../img/car_img5.jpg");
@@ -341,6 +419,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     max-width: 420px;
     margin-left: 15px;
     animation: tickle 1s linear infinite;
+    position: relative;
 }
 .carImg6{
     background-image: url("../img/car_img6.jpg");
@@ -351,6 +430,26 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     max-width: 420px;
     margin-left: 15px;
     animation: tickle 1s linear infinite;
+    position: relative;
+}
+
+.upperText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%,200%);
+    color: #fff;
+    width: 200px;
+    font-size: 18px;
+}
+.lowerText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, 340%);
+    color: #fff;
+    width: 200px;
+    font-size: 16px;
 }
 
 .supportImg{
@@ -410,6 +509,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 
 .Sview{
     position: relative;
+    top: -190px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #f81a1ad2;
@@ -432,6 +532,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 }
 .Aview{
     position: relative;
+    top: -120px;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: #f81a1ad2;
@@ -439,8 +540,8 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     width: 250px;
     height: 60px;
     border-radius: 30px;
-    margin-top: 150px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 200px;
 
 }
 .Aview p{
@@ -497,9 +598,38 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
     color:#fff;
     font-size: 18px;
 }
+.rightView{
+    position: relative;
+    left: 85%;
+    transform: translate(-50%,-155%);
+    background-color: #f81a1ad2;
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    padding: 15px;
+}
+.rightView p:nth-child(1){
+    display: block;
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    width: 100px;
+    height: 25px;
+    margin-left: 15px;
+}
+.rightView p:nth-child(2){
+    display: block;
+    float: right;
+    font-size: 18px;
+    color: #fff;
+    width: 100px;
+    height: 25px;
+}
 
 .videoView{
     position: relative;
+    top: -60px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #f81a1ad2;

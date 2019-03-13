@@ -1,24 +1,52 @@
 [
     {
         "class":{
-            "firstClass": "carImg1",
-            "secondClass": "carImg2",
+            "firstClass": {
+                "name":"carImg1",
+                "text": "Mercedes-Benz G-class",
+                "price": 100.000
+            },
+            "secondClass": {
+                "name":"carImg2",
+                "text": "Mercedes-Benz S-class",
+                "price": 150.000
+            },
             "border":"radius"
         }
+        
+        
     },
     {
         "class":{
-            "firstClass": "carImg3",
-            "secondClass": "carImg4",
+            "firstClass": {
+                "name":"carImg3",
+                "text": "Mercedes-Benz C-class",
+                "price": 120.000
+            },
+            "secondClass": {
+                "name":"carImg4",
+                "text": "Mercedes-Benz V-class",
+                "price": 130.000
+            },
             "border":"radius"
         }
+       
     },
     {
         "class":{
-            "firstClass": "carImg5",
-            "secondClass": "carImg6",
+            "firstClass": {
+                "name":"carImg5",
+                "text": "Mercedes-Benz B-class",
+                "price": 110.000
+            },
+            "secondClass": {
+                "name":"carImg6",
+                "text": "Mercedes-Benz A-class",
+                "price": 250.000
+            },
             "border":"radius"
         }
+       
     }
 
 
